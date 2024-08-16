@@ -9,7 +9,7 @@ import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
 
 function App() {
-  
+     
   const { productItems } = Data
   const { shopItems } = Sdata
 
