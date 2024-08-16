@@ -24,6 +24,7 @@ const Search = ({ CartItem }) => {
   const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
+    loginStatus= false
     const email = localStorage.getItem("userEmail");
     if (email) {
       setUserEmail(email);

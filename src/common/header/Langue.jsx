@@ -13,10 +13,10 @@ const Langue = () => {
     <div style={{ display: "flex", position: "relative" }}>
       <label htmlFor="langue-select">
         <img
-          src={langue == "fr" ? `${FranceFlag}` : `${EnglischFlag}`}
+          src={langue === "fr" ? `${FranceFlag}` : `${EnglischFlag}`}
           alt="French Flag"
           style={{ height: 20, width: 20 }}
-          title={langue == "fr" ? `Langue Francais` : `Langue Anglais`}
+          title={langue === "fr" ? `Langue Francais` : `Langue Anglais`}
         />
       </label>
       <select

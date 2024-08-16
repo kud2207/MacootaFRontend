@@ -39,7 +39,7 @@ export default function UserLoginIn() {
     try {
       const url = "http://localhost:3001/api/users/login";
       const { email, password ,} = formData;
-      const response = await axios.post(url, { email, password });
+       await axios.post(url, { email, password });
       localStorage.setItem("userEmail", email);
       console.log(formData.email, formData.password); 
       alert(localStorage.getItem('userEmail'))
